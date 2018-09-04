@@ -1,12 +1,12 @@
-function BoardMember(name, training, homestate){
+function BoardMember(name, homeState, training){
   this.name = name
   this.homeState = homeState
   this.training = training
 }
-Boardmember.prototype.veto = function(){
+BoardMember.prototype.veto = function(){
     return 'No, I must disagree'
   }
-  this.approve = function(){
+  BoardMember.approve = function(){
     return 'You can do that!'
   }
   this.doCharity = function(){
